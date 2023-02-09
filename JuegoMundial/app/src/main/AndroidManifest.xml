@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ldm.ejemplojuegomundial.juego">
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-sdk  android:targetSdkVersion="17"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoredondo1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoredondo1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EjemploJuegoPiratas"
+        tools:ignore="ExtraText">
+
+        android:icon="@drawable/logoredondo1" android:debuggable="false" android:label="JuegoMundial">
+
+        <activity android:name=".JuegoMundial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
